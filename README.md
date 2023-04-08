@@ -1,6 +1,6 @@
 # Understanding Rust Result and Option Methods
 
-I made this table to help me understand converting between Option, Result, etc. Corrections and contributions welcome. It's on [GitHub](https://github.com/CarlKCarlK/method-calc/settings) and currently includes an Excel version and the very start of a WASM-based calculator.
+I made this table to help me understand converting between Option, Result, etc. Corrections and contributions welcome. It's on [GitHub](https://github.com/CarlKCarlK/method-calc/) and currently includes an Excel version and the very start of a WASM-based calculator.
 
 Who knew that you could apply `.map` to a result?
 
