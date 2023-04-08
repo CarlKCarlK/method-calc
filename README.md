@@ -1,8 +1,23 @@
 # Understanding Rust Result and Option Methods
 
-I made this table to help me understand converting between Option, Result, etc. Corrections and contributions welcome. It's on [GitHub](https://github.com/CarlKCarlK/method-calc/) and currently includes an Excel version and the very start of a WASM-based calculator.
+I made this table to help me understand converting between Option, Result, etc. Corrections and contributions welcome.
 
-Who knew that you could apply `.map` to a result?
+You can see the table as a [live Excel spreadsheet](https://1drv.ms/x/s!AkoPP4cC5J647eNqr4il0uOUQ41hrg?e=kGuilc) that you can filter.
+
+For example, if you say you want to go from Option\<T\> to T, it will tell you something like:
+
+| Ok(t) | None | method |
+|---|---|---|
+| t | lazy_t | unwrap_or_else(\|\| lazy_t) |
+| t | panic!("lazy message") | .unwrap_or_else(\|\| panic!("lazy message")) |
+| t | panic!("your message") | expect("your message") |
+| t | panic!("std message")  | unwrap() |
+| t | t0 |  unwrap_or(t0) |
+| t | T.default() |  unwrap_or_default() |
+
+ Everything is on [GitHub](https://github.com/CarlKCarlK/method-calc/), including the Excel version, and the start of a WASM calculator.
+
+## Table as Markdown
 
 | from | to | lambda to | Ok(t)/Some(t)/Some(Ok(t))/Ok(Some(t)) | None/Err(e)/Some(Err(e))/Ok(None) | na/na/None/Err(e) | method | side effect |
 |---|---|---|---|---|---|---|---|
