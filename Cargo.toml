@@ -1,6 +1,6 @@
 [package]
-name = "shortestpaper"
-version = "0.1.1"
+name = "method-calc"
+version = "0.0.1"
 edition = "2021"
 
 [lib]

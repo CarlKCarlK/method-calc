@@ -39,6 +39,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "method-calc"
+version = "0.0.1"
+dependencies = [
+ "fxhash",
+ "wasm-bindgen",
+]
+
+[[package]]
 name = "once_cell"
 version = "1.17.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -60,14 +68,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4424af4bf778aae2051a77b60283332f386554255d722233d09fbfc7e30da2fc"
 dependencies = [
  "proc-macro2",
-]
-
-[[package]]
-name = "shortestpaper"
-version = "0.1.1"
-dependencies = [
- "fxhash",
- "wasm-bindgen",
 ]
 
 [[package]]
